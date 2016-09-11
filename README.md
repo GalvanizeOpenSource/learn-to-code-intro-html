@@ -29,18 +29,22 @@ Recipes to give to your computer to “cook” up some awesome things for you on
 * Download the tutorial files on this page within the zip file  
 
 
-#### Download the files for this class:
+#### Download the file for this class:
 1. Go to https://github.com/GalvanizeOpenSource/Learn-To-Code-Intro-HTML
 2. Click on the button on the right-hand side that says "Download ZIP"
 3. Go to your downloads folder and double click on the .zip file to unzip it
 4. From Atom: File > open, select the folder and then click "Open"
 5. From Atom: If the file tree does not appear on the left hand View > Toggle Tree View -- this will show you the entire folder within Atom
-6. *Now if you already know some of what we're talking about,* open up the file in your browser -- `index.html`
+6. Open up the file in your browser -- `index.html`
 
-#### Alternative: Use CodePen to code for this course
+#### Alternative 1: Use CodePen to code for this course
 
-1. Go to codepen.io and click on the button `+New Pen`.
+1. Go to [http://codepen.io](http://codepen.io) and click on the button `+New Pen`.
 2. Focus on the window called "HTML". We'll work mostly in that one. Feel free to close the other windows.
+
+#### Alternative 2: Create an empty HTML file on your computer
+1. If you've already downloaded Atom, you can save an empty file called `index.html`.
+2. Open that file in your browser.
 
 Patience! Setting up your computer takes time and can be tricky, especially across platforms.
 
@@ -59,7 +63,7 @@ Hyper Text Markup Language, or HTML, is the most elemental language of the inter
 e.g. Element = <tag attribute=”blahblah”>content content</tag>
 ```
 
-#### HTML Tags:
+### HTML Tags:
 Tags are used to mark up the beginning and end of an HTML element.
 
 Almost everything in HTML needs to start and end with a tag
@@ -115,9 +119,13 @@ Check your browser. Did it work? If so, try some other exercises:
 
 #### LET'S CODE
 
-This one is nice and easy: Add a few `<
+This one is nice and easy: Add a few `<hr />` tags in your page between the `<html></html>` tags. What happens after you refresh?
 
-#### HTML Attributes:
+Try more activities with void elements:
+* Add a `<br />` tag and refresh. What happens?
+* The other tags won't do much without an attribute. Let's dive deeper!
+
+### HTML Attributes:
 HTML attributes inform the browser on what to do with a tagged piece of content.
 Attributes generally appear as name-value pairs. 
 ```
@@ -125,64 +133,44 @@ Attributes generally appear as name-value pairs.
 ```
 ###### The most common attributes are:
 - id="" - id is used on only a single element"
-- class="" - class can be used on multiple elements" *More on that in CSS*
+- class="" - class can be used on multiple elements" *More on that in our CSS class*
 - href=”” - hyperlink reference to an internal or external link
 - src=”” - source file to an image, video, etc.
 - style=”” - add some color, font, margins, etc.
 - ^ *There’s a MUCH better way to do this via CSS - more on that in a different lesson!*
 
+#### LET'S CODE
+
+Let's build a working link in your new file. Shamelessly, here's how you build a link to the Galvanize web page.
+```html
+<html>
+  <h1>Hello World!</h1>
+  <a href="https://galvanize.com">Click here to go to Galvanize!</a>
+</html>
+```
+Notice the syntax of the `href=""` inside the `<a>` tag. That's all you need to create text that direct the content to the page.
+
+Try some other attributes:
+* Create an image from another page using the `<img src="" />` element. Use any image with a hyperlink.
+* See if you can change the color of your text to green. *Hint: use the `style="color:green;` attribute.*
+
+
+### Inspecting Your Code
+
 How do we check elements for whether they're talking to the browser? Use the **inspect element** feature!
 
+This is great for reviewing whether certain elements, attributes, or imported information are actually working.
 
-#### What are IDs?
-IDs are attributes that are used only on one element ONLY and noted with a “#” symbol in CSS
-e.g.
-```
-HTML: 
-<a id=”leesName”>Lee Ngo</a>
-```
-IDs are used to direct functions to unique elements in the HTML so that there’s no confusion
-
-*e.g clicking to a specific part of page*
-
-Classes are used to change or affect multiple items in an HTML document at once
-
-*e.g. everything with class=”ninja” should have the same attributes*
-
-In tandem, you can do a lot with HTML & CSS! Let's give it a shot!
-
-## LET'S CODE!
-
-###### Remember:
-- Coding can be hard - be patient!
-- Work in pairs! Even the pros do it
-- Ask for help - we’re in a school!
-
-#### Let's get started!
-1. Open up your text editor
-2. Navigate to your repo
-3. Open up the following files
-- index.html
-
-
-#### Let's change the font!
-1. Navigate to Google Fonts: https://www.google.com/fonts
-2. Find a font you like and click "Add to Collection".
-3. On the bottom right side of your screen click "Use".
-4. On the "Use" page, scroll down to "Number 3" and copy the link tag provided.
-5. Paste that link tag in your index.html file with the new link tag you copied from Google Fonts.
-6. Copy the CSS code under “Number Four.”
-7. Paste that code into your CSS under the body tag.
-8. Save and refresh!
-
-Did it work! Great! If not open up **Inspect Element** and see what happened.
+If something didn't work, open up **Inspect Element** and see what happened.
 
 ## Play around in the sandbox!
 
-Try one of the following:
+Try one of the following (some of this is HTML5):
 - Change the name of the site to...whatever!
-- Change all the navigation links & section headers
-- Replacing the images with your own images - locally, online, etc.
+- Create a `<body>` file that will be a placeholder for all your HTML content in the browser.
+- Create a `<header>` and `<footer>` elements - what happens?
+- Create a navigation bar with links and headers with the `<nav>` tag
+- Trying adding a video from YouTube.com. *Hint: every YouTube clip contains "embedded" HTML content.*
 - Show what you did with the others! 
 
 # YOU DID IT! YOU'RE NOW A CODER!
@@ -193,13 +181,14 @@ Welcome to the cool kids club.
 
 - 24 Week Full-Time Program
 - Scholarships available for those who qualify
-- Learn more at http://galvanize.com/courses/web-development/
+- Learn more at [http://galvanize.com/courses/web-development/](http://galvanize.com/courses/web-development/)
 
 #### Looking for something more flexible? Check out our Evening Workshops!
 
 - Zero to Web Designer
 - Foundations of JavaScript
-- Learn more at http://www.galvanize.com/workshops/
+- Web Development Immersive Prep
+- Learn more at [http://www.galvanize.com/workshops/](http://www.galvanize.com/workshops/)
 
 #### About the Authors
 
