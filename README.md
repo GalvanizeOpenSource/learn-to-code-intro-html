@@ -7,7 +7,7 @@ The goal of this brief course is to provide you with a fun introduction to the w
 #### Here's what we'll be doing:
 * Setting up our computers for web development
 * Overview of basic HTML syntax
-* Testing out basic HTML elements
+* Inspecting basic HTML elements
 * Playing around in the sandbox
 
 #### Before you begin, a quick gut check:
@@ -33,12 +33,14 @@ Recipes to give to your computer to “cook” up some awesome things for you on
 1. Go to https://github.com/GalvanizeOpenSource/Learn-To-Code-Intro-HTML
 2. Click on the button on the right-hand side that says "Download ZIP"
 3. Go to your downloads folder and double click on the .zip file to unzip it
-4. IMPORTANT! Leave all the individual files in the downloaded folder (if you would like to move it out of the downloads folder move the entire folder, not individual items)
-5. From Atom: File > open, select the folder and then click "Open"
-6. From Atom: If the file tree does not appear on the left hand View > Toggle Tree View -- this will show you the entire folder within Atom
-7. *Now if you already know some of what we're talking about,* you're all set to poke around in the files -- `index.html` and `CSS/style.css` are the two files we will using.
+4. From Atom: File > open, select the folder and then click "Open"
+5. From Atom: If the file tree does not appear on the left hand View > Toggle Tree View -- this will show you the entire folder within Atom
+6. *Now if you already know some of what we're talking about,* open up the file in your browser -- `index.html`
 
-#### Alternative: Use CodePen to learn this course
+#### Alternative: Use CodePen to code for this course
+
+1. Go to codepen.io and click on the button `+New Pen`.
+2. Focus on the window called "HTML". We'll work mostly in that one. Feel free to close the other windows.
 
 Patience! Setting up your computer takes time and can be tricky, especially across platforms.
 
@@ -51,7 +53,7 @@ Hyper Text Markup Language, or HTML, is the most elemental language of the inter
 ###### The syntax of most HTML is as follows:
 * `<Tags>` - code that wraps around the content of HTML to designate a particular effect, sometimes inherent to the tag.
 * `Attributes=""` - code inserted into tags to implement a particular effect that is external to the tag.
-* Elements - the combined syntax of tags, attributes, and elements.
+* _Elements_ - the combined syntax of tags, attributes, and elements.
 
 ```
 e.g. Element = <tag attribute=”blahblah”>content content</tag>
@@ -73,12 +75,47 @@ Everything is wrapped like layers of an onion, `<opened>` and `</closed>`
 - `<body></body>` contains browser information
 - `<span></span>` notes an inline element
 
+#### LET'S CODE!
+
+You currently have a blank HTML page. Let's make it say the classic coding phrase "Hello World!"
+
+First, to define the page to the browser as HTML, you have to add an `<html>` opening tag and `</html` closing tag.
+```html
+<html>
+</html>
+```
+
+Let's add a header tag to create some text. Add the following code:
+```html
+<html>
+  <h1></h1>
+</html>
+```
+
+Still, no `Hello World!` We can add it now in between the `<h1></h1>` tags:
+```html
+<html>
+  <h1>Hello World!</h1>
+</html>
+```
+
+Check your browser. Did it work? If so, try some other exercises:
+* Add a `<title></title>` to your page. Notice the change in the browser tab?
+* Add a few `<div></div>` tags and put some text in them. What happens?
+* Add a few `<span></span>` tags with text. What happens?
+
+
 ###### Irregular Tags:
 - `<img />` creates an image in the page
 - `<br />` creates a big break in the page
 - `<hr />` creates a horizontal line
 - `<link />` connects this to related documents
 - `<input />` creates an input field
+
+
+#### LET'S CODE
+
+This one is nice and easy: Add a few `<
 
 #### HTML Attributes:
 HTML attributes inform the browser on what to do with a tagged piece of content.
@@ -95,8 +132,6 @@ Attributes generally appear as name-value pairs.
 - ^ *There’s a MUCH better way to do this via CSS - more on that in a different lesson!*
 
 How do we check elements for whether they're talking to the browser? Use the **inspect element** feature!
-
-But... how do we make HTML... better?
 
 
 #### What are IDs?
