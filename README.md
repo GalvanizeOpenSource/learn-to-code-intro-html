@@ -152,7 +152,7 @@ Notice the syntax of the `href=""` inside the `<a>` tag. That's all you need to 
 
 Try some other attributes:
 * Create an image from another page using the `<img src="" />` element. Use any image with a hyperlink.
-* See if you can change the color of your text to green. *Hint: use the `style="color:green;` attribute.*
+* See if you can change the color of your text to green. *Hint: use the `style="color:green;"` attribute.*
 
 
 ### Inspecting Your Code
